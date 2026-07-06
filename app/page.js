@@ -101,6 +101,11 @@ function Hero() {
                   <Mail className="mr-2 h-4 w-4" /> Book a Demo
                 </a>
               </Button>
+              <Button asChild size="lg" variant="outline" className="border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10">
+                <a href={profile.resumeUrl} target="_blank" rel="noreferrer" download>
+                  <Download className="mr-2 h-4 w-4" /> Download Resume
+                </a>
+              </Button>
             </motion.div>
 
             <motion.div
@@ -381,12 +386,15 @@ function Contact() {
               <div className="text-sm text-slate-400 mb-1">Phone</div>
               <a href={`tel:${profile.phone}`} className="text-slate-100 hover:text-cyan-300">{profile.phone}</a>
             </div>
-            <div className="flex gap-3 pt-2">
+            <div className="flex flex-wrap gap-3 pt-2">
               <Button asChild variant="outline" size="sm" className="border-white/15 hover:bg-white/5">
                 <a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin className="mr-2 h-4 w-4" /> LinkedIn</a>
               </Button>
               <Button asChild variant="outline" size="sm" className="border-white/15 hover:bg-white/5">
                 <a href={profile.github} target="_blank" rel="noreferrer"><Github className="mr-2 h-4 w-4" /> GitHub</a>
+              </Button>
+              <Button asChild variant="outline" size="sm" className="border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10">
+                <a href={profile.resumeUrl} target="_blank" rel="noreferrer" download><Download className="mr-2 h-4 w-4" /> Resume</a>
               </Button>
             </div>
             <div className="pt-4 border-t border-white/10">
