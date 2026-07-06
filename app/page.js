@@ -79,9 +79,9 @@ function Hero() {
               initial="hidden" animate="show" variants={fadeUp} custom={1}
               className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05]"
             >
-              <span className="block text-slate-100">Hi, I'm {profile.name.split(' ')[0]}.</span>
-              <span className="block text-gradient">I build AI Agents that</span>
-              <span className="block text-slate-100">run engineering at scale.</span>
+              <span className="block text-slate-100">I am Pradeep,</span>
+              <span className="block text-gradient">Engineering Leader</span>
+              <span className="block text-slate-100">& AI Enthusiast.</span>
             </motion.h1>
             <motion.p
               initial="hidden" animate="show" variants={fadeUp} custom={2}
@@ -105,7 +105,7 @@ function Hero() {
 
             <motion.div
               initial="hidden" animate="show" variants={fadeUp} custom={4}
-              className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl"
+              className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl"
             >
               {profile.stats.map((s) => (
                 <div key={s.label} className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
